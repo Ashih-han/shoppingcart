@@ -1,0 +1,178 @@
+main{
+    /* background-color: pink; */
+    background-color: white;
+}
+
+main a{
+    text-decoration: none;
+}
+
+
+.titl-section{
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.my-3circle-card-section .my-3circle-card-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.my-3circle-card-img .card{
+    background: transparent;
+}
+
+main .my-table-section{
+    width: 100%;
+    padding: 0 20%;
+    font-weight: 300;
+}
+
+.my-table-section table{
+    font-size: 14px;
+}
+
+.my-dash{
+    width: 100px;
+    height: 3px;
+    background-color: indianred;
+}
+
+main a{
+    color: indianred;
+}
+
+.my-learn-more{
+    position: relative;
+}
+
+.my-learn-more::after{
+    content: ">";
+    position: absolute;
+    top: -2px;
+    right: -13px;
+    transition: 0.4s;
+}
+
+.my-learn-more:hover::after{
+    position: absolute;
+    top: -2px;
+    right: -15px;
+}
+
+.my-4card-section .card-img{
+    width: 100%;
+}
+
+.my-3circle-card-section-2{
+    width: 100%;
+    padding: 0 20%;
+}
+
+.my-3circle-card-section-2 .my-3circle-card-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: indianred;
+    overflow: hidden;
+}
+
+.my-product-section .my-gray-text{
+    font-size: 12px;
+    color: dimgray;
+}
+
+.my-product-section .my-smell-color{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.my-product-section .card-text-smell{
+    font-size: 12px;
+    color: indianred;
+}
+
+.my-product-section .card-text-big{
+    font-size: 16px;
+    color: rgb(98, 98, 98);
+}
+
+.smell-products-img{
+    opacity: 60%;
+}
+
+.smell-products-img:hover{
+    opacity: 100%;
+}
+
+.my-map{
+    width: 100%;
+    min-width: 366px;
+    position: relative;
+    height: 790px;
+}
+
+.my-map-content{
+    background-color: white;
+    width: 350px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.my-map h5{
+    font-size: 16px;
+}
+
+.my-map p,.my-map .my-map-text{
+    font-size: 12px;
+}
+
+/* xl以上 */
+@media (min-width:1200px) {
+
+}
+
+/* large以下 */
+@media (max-width:992px) {
+    .my-3circle-card-section-2{
+        width: 100%;
+        padding: 0 5%;
+    }
+    main .my-table-section{
+        width: 100%;
+        padding: 0 0;
+    }
+}
+
+/* md以下 */
+@media (max-width:768px) {
+
+    .my-4card-section .card{
+        width: 60%;
+    }
+
+    .my-4card-section .card-img{
+        width: 40%;
+    }
+}
+
+
+/* small以下 */
+@media (max-width:576px) {
+    .my-map-content{
+        width: 80%;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+    }
+}

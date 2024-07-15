@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
+    <link rel="stylesheet" href="./css/nav-footer.css">
+    <link rel="stylesheet" href="./css/main-page.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container my-nav-padding">
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+              <img src="./img/logo-6.jpeg" height="60px" alt="">
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item px-2" >
+                <a class="nav-link " href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <div class="row px-2 justify-content-center">
+                <div class="col-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./1-shoppingcart-p1.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+                <div class="col-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
+                    </a>
+                    <ul id="my-login-position" class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./2-login.html">Login</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <main class="d-flex flex-column justify-content-center" style="min-width: 366px;">
+        <!-- 輪播圖片 -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ratio ratio-21x9">
+              <div class="carousel-item active">
+                <img src="./img/big-1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/big-3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/big-4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- 大內容框 -->
+        <div class="container-md px-xl-5">
+          <div class="p-md-5 p-3 d-grid gap-5">
+            <!-- 1-小標題 -->
+            <div class="titl-section mb-5 w-100">
+              <div class="row justify-content-center mb-3">
+                <h3 class="col-auto px-1">《庫洛魔法使》</h3>
+                <img src="./img/03-8.jpeg" class="col-auto px-0" height="30px" alt="">
+                <h3 class="col-auto px-1">カードキャプターさくら</h3>
+              </div>
+              <p>是由日本漫畫團隊CLAMP創作的漫畫作品，以魔法少女作為題材。<br>
+                故事講述主角木之本櫻意外地將用於封印卡牌的書籍打開。卡牌為魔法師庫洛·里德創造之庫洛牌，每張卡牌都有不同能力，擁有自我意識並隨意行動。為了阻止它們對世界造成災難，櫻在守護者「可魯貝洛斯」的委託下，將四散的卡牌回收。</p>
+              <div class="my-dash"></div>
+            </div>
+            <!-- 2-三小圓直式卡片 -->
+            <div class="my-3circle-card-section mb-5">
+                <div class="row mb-3">
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <div class="text-center d-grid gap-3">
+                            <div class="my-3circle-card-img m-auto mb-3">
+                                <img src="./img/03-2.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title mb-3">封印之杖(本篇)</h5>
+                              <p class="card-text">封印之杖庫洛·里德為庫洛牌的新主人特意制作的魔杖，能夠幫助木之本樱將解除封印的庫洛牌重新封印並使用。</p>
+                            </div>
+                            <div class="card-body">
+                              <a href="#" class="my-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <div class="text-center d-grid gap-3">
+                            <div class="my-3circle-card-img m-auto mb-3">
+                                <img src="./img/03-5.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title mb-3">星封印杖(本篇)</h5>
+                              <p class="card-text">在所有卡牌回收後，守護者「月」便會進行持有卡牌之人進行審判。小櫻在審判中改變原有的封印杖，創造出星封印杖及小櫻牌，最終通過了審判。</p>
+                            </div>
+                            <div class="card-body">
+                              <a href="#" class="my-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <div class="text-center d-grid gap-3">
+                            <div class="my-3circle-card-img m-auto mb-3">
+                                <img src="./img/03-7.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title mb-3">夢之杖(透明牌篇)</h5>
+                              <p class="card-text">小櫻升上初中時一次作夢醒來後，翻開封印之書，發現小櫻牌都變成透明的了！小櫻重新踏上了利用夢之杖收集透明牌的故事。</p>
+                            </div>
+                            <div class="card-body">
+                              <a href="#" class="my-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="./1-shoppingcart-p1.html" class="btn my-btn">加入購物車</a>
+                </div>
+            </div>
+            <!-- 3-拼接圖片 -->
+            <div class="many-pic-section">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-3"><h5>值得省思的人物關係</h5></div>
+                    <div class="col-8"><p>小狼曾經對雪兔動心、雪兔和桃矢時時刻刻相守在一起；利佳雖然是異女，但寺田老師和她少說也差了 15 歲，比小櫻的爸爸還超過。園美早期對撫子有貌似超越親情的情愫。而永遠站在一旁拍攝小櫻施展魔法的知世，當小櫻問她「知世喜歡的人是誰呢？」她回答「沒關係，只要我喜歡的人幸福就好了。」</p></div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- 左 -->
+                    <div class="col-6 row">
+                      <div class="col row mb-2 mx-0 px-0">
+                        <img src="./img/6-12.jpeg" class="col-6 px-1" alt="">
+                        <img src="./img/6-10.jpeg" class="col-6 px-1" alt="">
+                      </div>
+                      <img src="./img/6-1.jpeg" class="col px-1" alt="">
+                    </div>
+                    <!-- 右 -->
+                    <div class="col-6 row">
+                      <img src="./img/6-3.jpeg" class="col px-1 mb-2" alt="">
+                      <div class="col row mx-0 px-0">
+                        <img src="./img/6-11.jpeg" class="col-6 px-1" alt="">
+                        <img src="./img/6-2.jpeg" class="col-6 px-1" alt="">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4-表格群組 -->
+            <div class="my-table-section text-center mb-5">
+                <h5>Raw Denim Heirloom Man Braid</h5>
+                <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+                <!-- 表格本人 -->
+                <table class="table">
+                    <thead>
+                    <tr class="table-secondary">
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                        <th scope="col">Handle</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td><input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"></td>
+                    </tr>
+                    <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                        <td><input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"></td>
+                    </tr>
+                    <tr>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td><input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"></td>
+                    </tr>
+                    <tr>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td><input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"></td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="#" class="my-learn-more">Learn More</a>
+                    <a href="#" class="btn my-btn">送出</a>
+                </div>
+            </div>
+            <!-- 5-四直式卡片群組 -->
+            <div class="my-4card-section mb-5">
+                <!-- 標題 -->
+                <div class="row justify-content-center mb-3">
+                    <div class="col-12 col-lg-2 mb-3">
+                        <h5>四大元素</h5>
+                        <div class="my-dash"></div>
+                    </div>
+                    <div class="col-12 col-lg-8"><p>庫洛牌總體分太陽屬性庫洛牌（陽）以光庫洛牌為首由 可魯貝洛斯 掌管，月亮屬性庫洛牌（陰）以暗庫洛牌為首由 月 掌管。光 庫洛牌掌管 火 和 地 兩張牌，暗 庫洛牌掌管 水 和 風 兩張牌。四大元素又分別掌管其它牌。</p></div>
+                </div>
+                <!-- 卡片本人 -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-5 col-xl-3 mb-3 me-lg-0 me-2 row justify-content-center">
+                        <div class="card p-3">
+                            <div class="card-img m-auto">
+                                <img src="./img/庫洛牌/2-1.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">「風」ウインディ</h5>
+                            <p class="card-text">有著「月」屬性的庫洛牌，四大元素庫洛牌之一，自由控制空氣元素。個性非常溫和，除了攻擊之外，還可用作救人使用，小櫻常用來作為攻擊的卡片之一。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-3 mb-3 me-lg-0 me-2 row justify-content-center">
+                        <div class="card p-3">
+                            <div class="card-img m-auto">
+                              <img src="./img/庫洛牌/2-2.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">「水」ウォーティ</h5>
+                            <p class="card-text">有著「月」屬性的庫洛牌，四大元素庫洛牌之一，自由控制水元素，力量和攻擊性都非常強，最後因為變成冰，以致失去行動力，才得以被收服。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-3 mb-3 me-lg-0 me-2 row justify-content-center">
+                        <div class="card p-3">
+                            <div class="card-img m-auto">
+                              <img src="./img/庫洛牌/2-3.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">「火」ファイアリー</h5>
+                            <p class="card-text">有著「太陽」屬性的庫洛牌，四大屬性庫洛牌之一，自由控制火元素。個性好鬥，在攻擊面是相當強力的火精靈。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-3 mb-3 me-lg-0 me-2 row justify-content-center">
+                        <div class="card p-3">
+                            <div class="card-img m-auto">
+                              <img src="./img/庫洛牌/2-4.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">「地」アーシー</h5>
+                            <p class="card-text">有著「太陽」屬性的庫洛牌，四大屬性庫洛牌之一，自由控制土元素。是最後登場的庫洛牌，因為五行相剋的因素，在「樹」的攻擊下得以收服。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- 6-三小圈橫式卡片 -->
+            <div class="my-3circle-card-section-2 mb-5">
+              <!-- 一 -->
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+                  <img src="./img/03-1.jpeg" class="my-3circle-card-img p-0"  alt="...">
+                </div>
+                <div class="col-12  col-md-9">
+                  <h5 class="card-title py-1">THE CLOW CARDS 庫洛牌</h5>
+                  <p class="card-text">庫洛·里德使用魔力創造出來的卡牌，共五十三張。因為能力強大，為了防止在肉體生命消逝後被有心人士利用，庫洛·里德創造了封印獸 可魯貝洛斯 與 審判者月 共同守護。</p>
+                  <a href="https://zh.moegirl.org.cn/zh-tw/%E5%BA%93%E6%B4%9B%E7%89%8C" class="my-learn-more">Learn More</a>
+                </div>
+              </div>
+              <hr>
+              <!-- 二 -->
+              <div class="row justify-content-between">
+                <div class="col-12  col-md-9">
+                  <h5 class="card-title py-1">THE SAKURA CARDS 小櫻牌</h5>
+                  <p class="card-text">木之本櫻利用庫洛牌作為原型，使用自己的魔力將其歸屬自己名下的卡牌，共五十四張（最終為五十三張）。使用的是「星」的力量。</p>
+                  <a href="https://zh.moegirl.org.cn/zh-tw/%E5%BA%93%E6%B4%9B%E7%89%8C" class="my-learn-more">Learn More</a>
+                </div>
+                <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+                  <img src="./img/03-4.jpeg" class="my-3circle-card-img p-0"  alt="...">
+                </div>
+              </div>
+              <hr>
+              <!-- 三 -->
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+                  <img src="./img/03-6.jpeg" class="my-3circle-card-img p-0"  alt="...">
+                </div>
+                <div class="col-12  col-md-9">
+                  <h5 class="card-title py-1">THE CLEAR CARDS 透明牌</h5>
+                  <p class="card-text">是木之本櫻創造的卡牌。透明牌利用夢之杖收集，透明牌與以往的小櫻牌不同，卡牌呈透明狀態，而牌的正面可以看到所屬的牌的圖，但背面則不透，精靈亦與小櫻牌完全不同。使用「夢」的力量。</p>
+                  <a href="https://zh.wikipedia.org/zh-tw/%E5%BA%AB%E6%B4%9B%E9%AD%94%E6%B3%95%E4%BD%BF%EF%BC%9A%E9%80%8F%E6%98%8E%E7%89%8C%E7%AF%87" class="my-learn-more">Learn More</a>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="d-flex justify-content-center mt-3">
+                <a href="./1-shoppingcart-p1.html" class="btn my-btn">加入購物車</a>
+              </div>
+            </div>
+            <!-- 7-商品 -->
+            <div class="my-product-section">
+              <div class="big-product row mb-5">
+                <div class="col-12 col-lg-6">
+                   <img src="./img/庫洛牌/0-3-0.jpg" class="ratio ratio-4x5" style="width: 100%;" alt="">
+                </div>
+                <!-- 右邊 -->
+                <div class="col-12 col-md-6 py-4">
+                  <div class="my-gray-text">Clow Card x Sakura Card x Clear Card</div>
+                  <h3 class="m-0 py-2">THE MIRROR「鏡」ミラー</h3>
+                  <!-- 第3行星星 -->
+                  <div class="row">
+                    <div class="col-auto row px-4 align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="indianred" class="col-auto ps-1 pe-0 bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="indianred" class="col-auto ps-1 pe-0 bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="indianred" class="col-auto ps-1 pe-0 bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="indianred" class="col-auto ps-1 pe-0 bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="indianred" class="col-auto ps-1 pe-0 bi bi-star-half" viewBox="0 0 16 16">
+                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                      </svg>
+                    </div>
+                    <div class="col-auto my-gray-text border-end">4 Reviews</div>
+                    <div class="col-auto row px-3 align-items-center text-secondary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="col-auto ps-2 pe-0 bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="col-auto ps-2 pe-0 bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="col-auto ps-2 pe-0 bi bi-chat-fill" viewBox="0 0 16 16">
+                        <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="my-gray-text py-4">能映出被照映的任何人或物，產生它們的分身，但無法複製被映照者的思維。也可使用鏡子反射攻擊波動。能與人交談，她也常常代替不會說話的庫洛牌們傳達其心聲。對桃矢有好感，動畫61集中收下桃矢送的絲帶，所以變成卡片後有多加綠色絲帶。</div>
+                  <!-- 第4行color -->
+                  <div class="row ">
+                    <div class="col-auto my-gray-text">COLOR</div>
+                    <div class="col-auto row align-items-center">
+                      <div class="col-auto my-smell-color p-0 me-1 bg-body-tertiary"></div>
+                      <div class="col-auto my-smell-color p-0 me-1 bg-black"></div>
+                      <div class="col-auto my-smell-color p-0 me-1" style="background-color: indianred;"></div>
+                    </div>
+                    <div class="col-auto my-gray-text">SIZE</div>
+                    <select id="inputSize" class="form-select col-uato" style="width: 12%;">
+                      <option selected>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                    </select>
+                  </div>
+                  <hr>
+                  <div class="row justify-content-between d-flex align-items-center m-0 py-1">
+                    <h4 class="col-auto">$10.00</h4>
+                    <div class="col-auto row d-flex align-items-center">
+                      <a href="./1-shoppingcart-p1.html" class="btn my-btn col-auto me-2">加入購物車</a>
+                      <a href="#" class="col-auto">
+                        <div class="bg-secondary-subtle p-0 d-flex justify-content-center align-items-center rounded-circle" style="height: 35px; width: 35px;">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="smell-products row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-4.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE THROUGH「抜」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-5.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE MIST「霧」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-6.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE BIG「大」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-7.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE CLOUD「雲」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-8.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE ARROW「矢」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-9.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE SLEEP「眠」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-3.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE SNOW「雪」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="ratio ratio-1x1 smell-products-img">
+                    <img src="./img/庫洛牌/1-2.jpeg" class="card-img-top" style="width: 100%;" alt="...">
+                  </div>
+                  <div class="py-3">
+                    <div class="card-text-smell">Clow Card x Sakura Card</div>
+                    <div class="card-text-big">THE WOOD「樹」</div>
+                    <div class="card-text-big">$10.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8-地圖 -->
+        <div class="my-map">
+          <div class="my-map-content p-3">
+            <form>
+              <div class="mb-3">
+                <h5>Feedback</h5>
+                <p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail3" class="col-form-label my-map-text">Email</label>
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label my-map-text">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn my-btn w-100 mb-3">Sign in</button>
+              <p>Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+            </form>
+          </div>    
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9263.452730606301!2d120.64813811620647!3d24.17716470321656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691623a7988aa7%3A0x73dd146c41c3035a!2z6YCi55Sy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1718242066942!5m2!1szh-TW!2stw" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+        
+    </main>
+
+    <footer>
+      <div class="footer-menu text-center p-5">
+
+          <div class="row gy-5">
+
+            <div class="col-12 col-xl-4">
+              <img src="./img/logo-5.jpeg" height="150px" alt="">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+              <div class="main-item">
+                <p>「火」ファイアリー</p>
+                <ul class="subitem">
+                  <a href=""><li><span>燈&nbsp;THE GLOW</span></li></a>
+                  <a href=""><li><span>雷&nbsp;THE THUNDER</span></li></a>
+                  <a href=""><li><span>闘&nbsp;THE FIGHT</span></li></a>
+                  <a href=""><li><span>剣&nbsp;THE SWORD</span></li></a>
+                  <a href=""><li><span>盾&nbsp;THE SHIELD</span></li></a>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+              <div class="main-item">
+                <p>「地」アーシー</p>
+                <ul class="subitem">
+                  <a href=""><li><span>花&nbsp;THE FLOWER</span></li></a>
+                  <a href=""><li><span>秤&nbsp;THE LIBRA</span></li></a>
+                  <a href=""><li><span>錠&nbsp;THE LOCK</span></li></a>
+                  <a href=""><li><span>迷&nbsp;THE MAZE</span></li></a>
+                  <a href=""><li><span>輪&nbsp;THE LOOP</span></li></a>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+              <div class="main-item">
+                <p>「風」ウインディ</p>
+                <ul class="subitem">
+                  <a href=""><li><span>翔&nbsp;THE FLY</span></li></a>
+                  <a href=""><li><span>跳&nbsp;THE JUMP</span></li></a>
+                  <a href=""><li><span>嵐&nbsp;THE STORM</span></li></a>
+                  <a href=""><li><span>樹&nbsp;THE WOOD</span></li></a>
+                  <a href=""><li><span>駆&nbsp;THE DASH</span></li></a>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 col-xl-2">
+              <div class="main-item">
+                <p>「水」ウォーティ</p>
+                <ul class="subitem">
+                  <a href=""><li><span>鏡&nbsp;THE MIRROR</span></li></a>
+                  <a href=""><li><span>雨&nbsp;THE RAIN</span></li></a>
+                  <a href=""><li><span>霧&nbsp;THE MIST</span></li></a>
+                  <a href=""><li><span>凍&nbsp;THE FREEZE</span></li></a>
+                  <a href=""><li><span>波&nbsp;THE WAVE</span></li></a>
+                </ul>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="footer-nav px-sm-5 py-2 px-3">
+        <div class="footer-nav-left">©&nbsp;カードキャプターさくら&nbsp;——&nbsp;@&nbsp;CLAMP</div>
+        <div class="footer-nav-right">
+          <div class="nav-right-icon ms-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </div>
+          <div class="nav-right-icon ms-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+          </div>
+          <div class="nav-right-icon ms-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

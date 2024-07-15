@@ -1,0 +1,71 @@
+  nav .my-nav-padding{
+    padding: 0px 20px;
+    min-width: 366px;
+  }
+
+  @media (max-width:992px) {
+    nav .my-nav-padding{
+    padding: 0px 10px;
+  }
+  }
+
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  #my-login-position{
+    position: absolute;
+    left: -120px;
+  }
+
+  footer ul,footer li,footer a{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  }
+
+  footer p{
+    font-size: 16px;
+    color:gray;
+    font-weight: 400;
+  }
+
+  footer .footer-menu{
+    font-size: 14px;
+    min-width: 366px;
+  }
+
+  footer .footer-nav{
+    background-color: rgb(255, 239, 248);
+    color: indianred ;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 366px;
+  }
+
+
+
+  .footer-nav-right{
+    display: flex;
+    /* background-color: orange; */
+  }
+
+  hr{
+    color: rgb(254, 166, 218);
+  }
+
+  .my-btn{
+    color: white;
+    background-color: indianred;
+  }
+
+  .my-btn-2{
+    color: indianred;
+    background-color: white;
+    border: 1px solid indianred;
+  }
